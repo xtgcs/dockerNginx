@@ -1,0 +1,7 @@
+FROM ayoungfish/nginx-base
+
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY certbot.service /etc/systemd/system/
+RUN systemctl enable certbot
+
+

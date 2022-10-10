@@ -1,0 +1,10 @@
+[Unit]
+Description=certbot generate ssl certificate
+After=nginx.target
+
+[Service]
+Type=forking
+ExecStart=bash /getSsl.sh
+
+[Install]
+WantedBy=multi-user.target
