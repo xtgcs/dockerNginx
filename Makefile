@@ -3,3 +3,6 @@ build:
 
 deploy:
 	docker run --restart=always -d  --network host xtgcs/nginx
+
+push:
+	docker push xtgcs/nginx
