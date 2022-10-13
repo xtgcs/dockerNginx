@@ -12,6 +12,6 @@ RUN apt-get install -y curl
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
-
+COPY cert /cert 
 
 
